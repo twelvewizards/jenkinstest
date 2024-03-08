@@ -1,0 +1,9 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Jenkins Pipeline
+      uses: jenkinsci/jfr-container-action@master
+      with:
+        jenkinsfile: Jenkinsfile
